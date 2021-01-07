@@ -5,11 +5,6 @@ from typing import List
 import click
 import subprocess
 
-cmd_group_change_git_account = [
-    ["git", "config", "--global", "user.name", "hoge"],
-    ["git", "config", "--global", "user.email", "hoge@hogei.com"],
-]
-
 
 def run_cmds(cmd_list: List):
     for cmd in cmd_list:
